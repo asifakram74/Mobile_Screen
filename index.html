@@ -5,60 +5,144 @@
     <link rel="stylesheet" href="devices.min.css" type="text/css">
 </head>
 <style>
-    body {
+    body{
         background-color: #001534;
-
+    }
+    .iphone_x,
+    .iphone_8,
+    .iphone_5s {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 100px 0 50px;
+    }
+    .landscape{
+        margin: 0px 0 50px !important;
     }
 
     .screen img {
         height: 100%;
         width: 100%;
-        object-fit: fill;
 
     }
 
     .marvel-device {
         margin: 0 17px;
     }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+        width: 100px;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 2px;
+        color: white;
+        padding: 0 10px;
+        background-color: rgba(224, 175, 47, 1);
+        border-radius: 30px;
+        cursor: pointer;
+        text-align: center;
+        margin: 100px 0 25px;
+        text-transform: uppercase;
+    }
+    h1:hover,
+    h2:hover,
+    h3:hover,
+    h4:hover,
+    h5:hover,
+    h6:hover{
+        opacity: 0.6px;
+    }
 </style>
 
 <body>
-    <div class="marvel-device iphone-x">
-        <div class="notch">
-            <div class="camera"></div>
-            <div class="speaker"></div>
+    <div class="iphone_x">
+        <h1>potrait</h1>
+        <div class="marvel-device iphone-x">
+            <div class="notch">
+                <div class="camera"></div>
+                <div class="speaker"></div>
+            </div>
+            <div class="top-bar"></div>
+            <div class="sleep"></div>
+            <div class="bottom-bar"></div>
+            <div class="volume"></div>
+            <div class="overflow">
+                <div class="shadow shadow--tr"></div>
+                <div class="shadow shadow--tl"></div>
+                <div class="shadow shadow--br"></div>
+                <div class="shadow shadow--bl"></div>
+            </div>
+            <div class="inner-shadow"></div>
+            <div class="screen">
+                <img src="./four.avif" alt="image">
+            </div>
         </div>
-        <div class="top-bar"></div>
-        <div class="sleep"></div>
-        <div class="bottom-bar"></div>
-        <div class="volume"></div>
-        <div class="overflow">
-            <div class="shadow shadow--tr"></div>
-            <div class="shadow shadow--tl"></div>
-            <div class="shadow shadow--br"></div>
-            <div class="shadow shadow--bl"></div>
-        </div>
-        <div class="inner-shadow"></div>
-        <div class="screen">
-            <img src="./four.avif" alt="image">
+        <h2>landscape</h2>
+        <div class="marvel-device iphone-x landscape">
+            <div class="notch">
+                <div class="camera"></div>
+                <div class="speaker"></div>
+            </div>
+            <div class="top-bar"></div>
+            <div class="sleep"></div>
+            <div class="bottom-bar"></div>
+            <div class="volume"></div>
+            <div class="overflow">
+                <div class="shadow shadow--tr"></div>
+                <div class="shadow shadow--tl"></div>
+                <div class="shadow shadow--br"></div>
+                <div class="shadow shadow--bl"></div>
+            </div>
+            <div class="inner-shadow"></div>
+            <div class="screen">
+                <!-- Content goes here -->
+                <img src="./desert.avif" alt="image">
+            </div>
         </div>
     </div>
-    <!-- .................................. -->
-    <div class="marvel-device iphone8 silver">
-        <div class="top-bar"></div>
-        <div class="sleep"></div>
-        <div class="volume"></div>
-        <div class="camera"></div>
-        <div class="sensor"></div>
-        <div class="speaker"></div>
-        <div class="screen">
-            <img src="./five.avif" alt="image">
-        </div>
-        <div class="home"></div>
-        <div class="bottom-bar"></div>
-    </div>
-    <!-- .................................. -->
 
+    
+    <div class="iphone_8">
+        <h3>potrait</h3>
+        <div class="marvel-device iphone8 silver">
+            <div class="top-bar"></div>
+            <div class="sleep"></div>
+            <div class="volume"></div>
+            <div class="camera"></div>
+            <div class="sensor"></div>
+            <div class="speaker"></div>
+            <div class="screen">
+                <img src="./five.avif" alt="image">
+            </div>
+            <div class="home"></div>
+            <div class="bottom-bar"></div>
+        </div>
+        <h4>landscape</h4>
+        <div class="marvel-device iphone8 silver landscape">
+            <div class="top-bar"></div>
+            <div class="sleep"></div>
+            <div class="volume"></div>
+            <div class="camera"></div>
+            <div class="sensor"></div>
+            <div class="speaker"></div>
+            <div class="screen">
+                <!-- Content goes here -->
+                <img src="./sea.avif" alt="image">
+            </div>
+            <div class="home"></div>
+            <div class="bottom-bar"></div>
+        </div>
+    </div>
+
+
+   <div class="iphone_5s">
+    <h5>potrait</h5>
     <div class="marvel-device iphone5s">
         <div class="top-bar"></div>
         <div class="sleep"></div>
@@ -72,7 +156,22 @@
         <div class="home"></div>
         <div class="bottom-bar"></div>
     </div>
-    <!-- .................................. -->
+    <h6>landscape</h6>
+    <div class="marvel-device iphone5s landscape">
+        <div class="top-bar"></div>
+        <div class="sleep"></div>
+        <div class="volume"></div>
+        <div class="camera"></div>
+        <div class="sensor"></div>
+        <div class="speaker"></div>
+        <div class="screen">
+            <!-- Content goes here -->
+            <img src="./mountain.avif" alt="image">
+        </div>
+        <div class="home"></div>
+        <div class="bottom-bar"></div>
+    </div>
+   </div>
 
 </body>
 
